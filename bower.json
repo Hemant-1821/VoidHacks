@@ -1,0 +1,26 @@
+{
+  "name": "voidhacks",
+  "description": "void hacks website Group 4",
+  "main": "index.js",
+  "authors": [
+    "Hemant Singh"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.7.9",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^5.12.0",
+    "jquery": "^3.4.1"
+  }
+}
