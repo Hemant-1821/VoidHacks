@@ -1,3 +1,10 @@
+.bg-nav{
+    background-color:#05386B;
+}
+.padding-jumb{
+  padding-top: 150px;
+  background-color:#6BC8B0;
+}
 .navbar-nav.navbar-center {
   position: relative;
     left: 50%;
@@ -10,7 +17,6 @@
 }
 .rounded-corners{
   border-radius: 10px;
-  margin-top: 10px;
 }
 .bg-image{
   background-attachment: fixed;
