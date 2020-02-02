@@ -3,67 +3,59 @@
 <head>
   <link rel="icon" type="image/icon" href="img/vhlogo.png">
   <meta charset="utf-8">
-  <base href="./">
   <link rel="stylesheet" href="libs/animate.css/animate.min.css">
   <link rel="stylesheet" href="libs/wicked.css/wickedcss.min.css">
   <link rel="stylesheet" href="css/logo.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body class="bg-image" style="background-image: url();">
+<body>
+  <div class="fluid-container">
   <div class="header">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav navbar-center mt-2 mt-lg-0">
-            <li class="nav-item active nav-li">
-              <a class="nav-link" href="#"><font face = "Helvetica" size = "4">Home</font><span class="sr-only">(current)</span></a>
+            <li class="nav-item active nav-li slideRight">
+              <a class="nav-link" href="#home"><font face = "Helvetica" size = "4">Home</font></a>
             </li>
-            <li class="nav-item active nav-li">
-              <a class="nav-link" href="#"><font face = "Helvetica" size = "4">About</font><span class="sr-only">(current)</span></a>
+            <li class="nav-item active nav-li slideRight">
+              <a class="nav-link" href="#about"><font face = "Helvetica" size = "4">About</font></a>
             </li>
-            <li class="nav-item active">
-              <img src="img/vhlogo.png" class="navbar-brand" height="60px" width="60px"/>
+            <li class="nav-item active nav-li slideDown">
+              <img src="img/vhlogo.png" class="navbar-brand size_hide" height="60px" width="60px"/>
             </li>
-            <li class="nav-item active nav-li">
-              <a class="nav-link" href="#"><font face = "Helvetica" size = "4">Gallery</font><span class="sr-only">(current)</span></a>
+            <li class="nav-item active nav-li slideLeft">
+              <a class="nav-link" href="#gallery"><font face = "Helvetica" size = "4">Gallery</font></a>
             </li>
-            <li class="nav-item active nav-li">
-              <a class="nav-link" href="#"><font face = "Helvetica" size = "4">Login/SignUp</font><span class="sr-only">(current)</span></a>
+            <li class="nav-item active nav-li slideLeft">
+              <a class="nav-link" href="#"><font face = "Helvetica" size = "4">Login/SignUp</font></a>
             </li>
           </ul>
         </div>
     </nav>
   <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
+    <div class="my-progress-bar" id="myBar"></div>
   </div>
   </div>
-        <div class="fluid-jumbotron padding-jumb text-black">
-          <div class="row">
-            <div class="col-sm-5">
-              <div style="position: relative; left: 0; top: 0;">
-                <center><img src="img/void.png" class="img-fluid" height="200" width="240"/><br></center>
-                <font face = "Garamond" size = "5"><center>Void Hacks()</center></font>
-                <font face = "Garamond" size = "5"><center>April 3-6, 2020</center></font>
-                <font face = "Garamond" size = "5"><center>SVVV, Indore(M.P)</center></font>
-              </div>
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-              <font face = "Comic Sans MS" size = "4"><center><h1 class="text-sm-left">VoidHacks prides itself on being central India’s biggest community hackathon.</h1></center></font><br>
-              <font face = "Allerta" size = "5"><center><p class="text-sm-left">Since its inception in 2019, VoidHacks has been a platform where technology leaders and the brightest minds
-                come together to collaborate on building tools that solve real problems. With big breakthroughs in the
-                last editions, our team is thrilled to host its second edition in the SVVV, Indore.</p><center></font><br>
-                  <font face = "Allerta" size = "5"><p class="text-sm-left">We are all set to make InOut 6.0 a bigger success than any of the previous iterations.</p></font>
-              </div>
-              <div class="col-sm-1"></div>
-          </div>
-      </div>
-      <div class="container">
+</div>
+<div class="fluid-container" id="home">
+  <div class="fluid-jumbotron my-jumbotron">
+    <h1 class="ml7">
+      <span class="text-wrapper">
+        <span class="letters text-white padding-text">Hi Hackers,</span>
+      </span>
+    </h1>
+    <div class="typewriter tw-padding">
+      <div id="parent">Welcome to Void hacks()<div id="border"></div></div>
+    </div>
+  </div>
+</div>
+  <div id="gallery" class="container">
       <div class="fluid-jumbotron text-black">
-        <center><img src="img/everyone.png" class="img-fluid padding-img" height="100" width="400"/><br></center>
+        <center><img src="img/everyone.png" class="img-fluid padding-img" height="200" width="550"/><br></center>
         <font face = "Allerta" size = "5"><center><p class="text-sm-left padding-text">SVVV's Void Hacks() is a 36 hour hackathon fostering innovation and
           creativity through learning by doing, with some wicked prizes up for grabs. While taking breaks from building your projects,
           you’ll enjoy free meals, attend fun mini-events, interact with industry leaders, and make some friends along the way.
@@ -118,8 +110,10 @@
     <script>
       AOS.init({duration:1300,});
     </script>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scroll.js"></script>
+
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/anime.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

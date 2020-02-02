@@ -1,9 +1,10 @@
-.bg-nav{
-    background-color:#05386B;
+.my-jumbotron{
+  height: 100%;
+  width: 100%;
+  background-color:black;
 }
-.padding-jumb{
-  padding-top: 150px;
-  background-color:#5CDB95;
+.bg-nav{
+    background-color:black;
 }
 .padding-img{
   padding-top: 50px;
@@ -15,7 +16,7 @@
   padding-top: 20px;
 }
 .navbar-nav.navbar-center {
-  position: relative;
+    position: relative;
     left: 50%;
     transform: translatex(-50%);
 }
@@ -23,9 +24,6 @@
   display: inline;
   padding-right: 30px;
   padding-top: 10px;
-}
-.rounded-corners{
-  border-radius: 10px;
 }
 .bg-image{
   background-attachment: fixed;
@@ -41,21 +39,66 @@
   width: 100%;
   background-color: #f1f1f1;
 }
-.header h2 {
-  text-align: center;
-}
 .progress-container {
   width: 100%;
   height: 8px;
-  background: #ccc;
+  background: black;
 }
-.progress-bar {
+.my-progress-bar {
   height: 8px;
-  background: #4caf50;
+  background: white;
   width: 0%;
 }
-.content {
-  padding: 100px 0;
-  margin: 50px auto 0 auto;
-  width: 80%;
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 300px;
+  padding-left: 50px;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 100px;
+}
+
+#parent {
+  height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  color: rgba(255,255,255,.70);
+  position: relative;
+}
+
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+#parent {
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
+}
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 500px;}
+}
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(0,255,0,.75);}
+  to{border-bottom-color: transparent;}
+}
+.tw-padding{
+  padding-left: 380px;
 }
