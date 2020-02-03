@@ -5,6 +5,7 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
 $(window).resize(function() {
   if ($(this).width() < 1024) {
     $('.size_hide').hide();
@@ -26,8 +27,8 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: (el, i) => 50 * i
   });
-  
-  $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+
+$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
       event.preventDefault()
         if (
           location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
