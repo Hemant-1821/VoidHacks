@@ -9,8 +9,17 @@ function myFunction() {
 $(window).resize(function() {
   if ($(this).width() < 1024) {
     $('.size_hide').hide();
-  } else {
+  }else {
     $('.size_hide').show();
+    }
+});
+
+$(window).resize(function() {
+  if ($(this).width() < 1366) {
+    $('.img-size').show();
+  }
+  if($(this).width() > 1366){
+    $('.img-size').hide();
     }
 });
 

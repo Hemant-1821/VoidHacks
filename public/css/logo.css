@@ -1,7 +1,13 @@
+.container{
+  border:none;
+}
 .my-jumbotron{
   height: 100%;
   width: 100%;
   background-color:black;
+}
+.img-size{
+  padding: 20px;
 }
 .bg-nav{
     background-color:black;
@@ -10,7 +16,7 @@
   padding-top:50px;
 }
 .padding-img{
-  padding-top: 120px;
+  padding-top: 150px;
 }
 .padding-text{
   padding-top: 50px;
@@ -64,7 +70,7 @@
   position: relative;
 }
 #border {
-  border-bottom: solid 3px rgba(0,255,0,.75);
+  /* border-bottom: solid 3px rgba(0,255,0,.75); */
   position: absolute;
   right: -7px;
   width: 25px;
@@ -85,4 +91,92 @@
 }
 .tw-padding{
   padding-left: 380px;
+}
+
+
+/* FAQ SECTION */
+#faq{
+  background-color:#fff9f0;
+}
+#faq #accordion .card{
+  border:2px solid #ffd33d;
+  border-radius:5px;
+  -webkit-transition:border .2s linear;
+  -o-transition:border .2s linear;
+  transition:border .2s linear;
+}
+#faq #accordion .card.active{
+  border:2px solid #8166cd;
+}
+#faq #accordion .card .card-header{
+  text-align:left;
+  color:#e15841;
+  font-weight:700;
+  font-size:18px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  border:none;
+  background:0 0;
+  white-space:normal;
+}
+#faq #accordion .card .card-header::before{
+  content:url(../img/icon-minus.svg);
+  padding-top:7px;margin-right:1rem;
+  -webkit-transition:all .4s ease-out;
+  -o-transition:all .4s ease-out;
+  transition:all .4s ease-out;
+}
+#faq #accordion .card .card-header.collapsed::before{
+  content:url(../img/icon-plus.svg);
+}
+#faq #accordion .card.transition .card-header::before{
+  -webkit-animation:rotate .8s ease-out;
+  animation:rotate .8s ease-out;
+}
+#faq #accordion .card.transition.active .card-header::before{
+  -webkit-animation:rotate .4s ease-out;
+  animation:rotate .4s ease-out;
+}
+#faq #accordion .card .card-body{
+  color:#836643;font-size:16px;
+}
+
+/* Sponsors */
+#sponsors{
+  color:#847c9e
+}
+
+#sponsors .logos{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+}
+#sponsors .logos img{
+  margin:32px
+}
+@media (max-width:767px){
+  #sponsors .logos img{
+    margin:16px 0
+}
+}#sponsors .logos .digital-ocean{
+  width:280px
+}
+@media (max-width:575px){
+  #sponsors .logos .digital-ocean{
+    width:220px
+  }
+}
+#sponsors .organizer,#sponsors .past-sponsors{
+  margin-top:6rem
 }
